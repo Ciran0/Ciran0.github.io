@@ -1,0 +1,132 @@
+/* css/style.css */
+
+/* --- Basic Setup & Variables --- */
+:root {
+	--primary-color: #333;
+	--secondary-color: #5e616c;
+	--background-color: #f4f4f4;
+	--text-color: #333;
+	--link-color: #007bff;
+	--header-height: 60px;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	margin: 0;
+	padding-top: var(--header-height);
+	/* Prevent content from hiding behind fixed header */
+	background-color: var(--background-color);
+	color: var(--text-color);
+	line-height: 1.6;
+}
+
+main {
+	max-width: 800px;
+	margin: 2rem auto;
+	padding: 0 1rem;
+}
+
+a {
+	color: var(--link-color);
+	text-decoration: none;
+	transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+	color: #0056b3;
+}
+
+/* --- Header & Navbar --- */
+.site-header {
+	background-color: white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: var(--header-height);
+	z-index: 1000;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
+	height: 100%;
+}
+
+.nav-brand {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: var(--primary-color);
+}
+
+.nav-menu {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-item>a {
+	display: block;
+	padding: 0 1rem;
+	line-height: var(--header-height);
+	color: var(--text-color);
+}
+
+.nav-item>a:hover {
+	background-color: #f0f0f0;
+}
+
+/* --- Pure CSS Dropdown Logic --- */
+.dropdown {
+	position: relative;
+	/* This is the anchor for the dropdown menu */
+}
+
+.dropdown-menu {
+	display: none;
+	/* Hide the dropdown by default */
+	position: absolute;
+	top: 100%;
+	/* Position it right below the "Activities" link */
+	right: 0;
+	background-color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	list-style: none;
+	padding: 0.5rem 0;
+	margin: 0;
+	min-width: 200px;
+	/* Give it some width */
+	z-index: 1001;
+}
+
+/* This is the magic: When you hover over the .dropdown list item... */
+.dropdown:hover .dropdown-menu {
+	display: block;
+	/* ...show the menu! */
+}
+
+.dropdown-menu li a {
+	display: block;
+	padding: 0.5rem 1rem;
+	white-space: nowrap;
+	/* Prevent text from wrapping */
+}
+
+.dropdown-menu li a:hover {
+	background-color: #f0f0f0;
+}
+
+/* --- Footer --- */
+.site-footer {
+	text-align: center;
+	padding: 2rem 1rem;
+	margin-top: 4rem;
+	background-color: white;
+	border-top: 1px solid #e0e0e0;
+}

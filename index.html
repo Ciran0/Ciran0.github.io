@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ciran0's Portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://unpkg.com/htmx.org@1.9.10"
+                integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+                crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <nav class="navbar">
+                <a href="/"
+                   hx-get="/partials/home.html"
+                   hx-target="#content"
+                   hx-push-url="true"
+                   class="nav-brand">Ciran0</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="cv"
+                           hx-get="/partials/cv.html"
+                           hx-target="#content"
+                           hx-push-url="true">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects"
+                           hx-get="/partials/projects.html"
+                           hx-target="#content"
+                           hx-push-url="true">Professional Projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="javascript:void(0);">Activities</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="arch-linux"
+                                   hx-get="/partials/activities/arch-linux.html"
+                                   hx-target="#content"
+                                   hx-push-url="true">Learning Arch Linux</a>
+                            </li>
+                            <li>
+                                <a href="neovim"
+                                   hx-get="/partials/activities/neovim.html"
+                                   hx-target="#content"
+                                   hx-push-url="true">Learning Neovim</a>
+                            </li>
+                            <li>
+                                <a href="pc-build"
+                                   hx-get="/partials/activities/pc-build.html"
+                                   hx-target="#content"
+                                   hx-push-url="true">Building my Computer</a>
+                            </li>
+                            <li>
+                                <a href="construction"
+                                   hx-get="/partials/activities/construction.html"
+                                   hx-target="#content"
+                                   hx-push-url="true">Working in Construction</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main id="content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </main>
+        <footer class="site-footer">
+            <p>&copy; 2024 Ciran0. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
