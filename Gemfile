@@ -1,3 +1,5 @@
+# Gemfile
+
 source "https://rubygems.org"
 
 # Specify a modern version of Jekyll that supports your theme's features
@@ -9,3 +11,6 @@ gem "jekyll-remote-theme"
 
 # It is also good practice to include the theme's gem directly
 gem "minimal-mistakes-jekyll"
+
+# Add the include-cache plugin to be installed
+gem "jekyll-include-cache"
