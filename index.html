@@ -14,62 +14,49 @@
     <body>
         <header class="site-header">
             <nav class="navbar">
-                <a href="/"
+                <a href="#home"
                    hx-get="/partials/home.html"
                    hx-target="#content"
-                   hx-push-url="true"
                    class="nav-brand">Ciran0</a>
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="cv"
-                           hx-get="/partials/cv.html"
-                           hx-target="#content"
-                           hx-push-url="true">CV</a>
+                        <a href="#cv" hx-get="/partials/cv.html" hx-target="#content">CV</a>
                     </li>
                     <li class="nav-item">
-                        <a href="project"
-                           hx-get="/partials/project.html"
-                           hx-target="#content"
-                           hx-push-url="true">Professional Project</a>
+                        <a href="#project" hx-get="/partials/project.html" hx-target="#content">Professional Project</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="javascript:void(0);">Activities</a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="arch-linux"
+                                <a href="#arch-linux"
                                    hx-get="/partials/activities/arch-linux.html"
-                                   hx-target="#content"
-                                   hx-push-url="true">Learning Arch Linux</a>
+                                   hx-target="#content">Learning Arch Linux</a>
                             </li>
                             <li>
-                                <a href="neovim"
+                                <a href="#neovim"
                                    hx-get="/partials/activities/neovim.html"
-                                   hx-target="#content"
-                                   hx-push-url="true">Learning Neovim</a>
+                                   hx-target="#content">Learning Neovim</a>
                             </li>
                             <li>
-                                <a href="lua"
+                                <a href="#lua"
                                    hx-get="/partials/activities/lua.html"
-                                   hx-target="#content"
-                                   hx-push-url="true">learning lua</a>
+                                   hx-target="#content">Learning Lua</a>
                             </li>
                             <li>
-                                <a href="pc-build"
+                                <a href="#pc-build"
                                    hx-get="/partials/activities/pc-build.html"
-                                   hx-target="#content"
-                                   hx-push-url="true">Building my Computer</a>
+                                   hx-target="#content">Building my Computer</a>
                             </li>
                             <li>
-                                <a href="construction"
+                                <a href="#construction"
                                    hx-get="/partials/activities/construction.html"
-                                   hx-target="#content"
-                                   hx-push-url="true">Working in Construction</a>
+                                   hx-target="#content">Working in Construction</a>
                             </li>
                             <li>
-                                <a href="activity summary"
+                                <a href="#summary"
                                    hx-get="/partials/activities/summary.html"
-                                   hx-target="#content"
-                                   hx-push-url="true">summary</a>
+                                   hx-target="#content">Summary</a>
                             </li>
                         </ul>
                     </li>
@@ -85,5 +72,20 @@
         <footer class="site-footer">
             <p>&copy; 2024 Ciran0. All rights reserved.</p>
         </footer>
+        <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Check for a hash in the URL on page load
+            const hash = window.location.hash || '#home';
+
+            // Find the link that corresponds to the hash
+            const selector = `a[href="${hash}"]`;
+            const link = document.querySelector(selector);
+
+            // If a matching link exists, "click" it to trigger the hx-get request
+            if (link) {
+                link.click();
+            }
+        });
+        </script>
     </body>
 </html>
