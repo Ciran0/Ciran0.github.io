@@ -1,9 +1,24 @@
 # _data/navigation.yml
+# Each '-' is an item in the navigation.
+# 'children' must be indented to be part of the item above it.
 
 main:
-  - title: "Portfolio"
-    url: /
-  - title: "PC Build"
-    url: /computer-build/
   - title: "CV"
     url: /cv/
+  - title: "Professional Project"
+    url: /professional-project/
+  - title: "Activities"
+    url: /activities/
+    children:
+      - title: "PC Build"
+        url: /computer-build/
+      - title: "Learning Arch Linux"
+        url: /learning-arch/
+      - title: "Learning Lua"
+        url: /learning-lua/
+      - title: "Learning Neovim"
+        url: /learning-neovim/
+      - title: "Work in Construction"
+        url: /working-in-construction/
+      - title: "Summary"
+        url: /activities-summary/
