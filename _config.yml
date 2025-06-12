@@ -1,0 +1,43 @@
+# _config.yml
+
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole site
+
+# -- Site Settings --
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Ciran0's IT Portfolio
+description: >- # this means to ignore newlines until "baseurl:"
+  A showcase of my journey into IT, from construction to code.
+url: "https://Ciran0.github.io" # the base hostname & protocol for your site
+# baseurl: "" # often left blank for user pages
+
+# -- Theme Settings --
+# Specifies the Minimal Mistakes theme and its skin.
+# The skin determines the color scheme.
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default" # "air", "dark", "dirt", "neon", etc.
+
+# -- Author Info --
+# For displaying author details in the site sidebar.
+author:
+  name: "Ciran0"
+  avatar: "/assets/images/bio-photo.jpg" # You'll want to upload your own photo here
+  bio: "Aspiring IT professional with a passion for Linux, Neovim, and building things from the ground up."
+  location: "Gembloux, Belgium"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Ciran0"
+    # - label: "LinkedIn"
+    #   icon: "fab fa-fw fa-linkedin"
+    #   url: "https://www.linkedin.com/in/your-linkedin-profile/"
+
+# -- Site Build Settings --
+# You can safely ignore these for now
+plugins:
+  - jekyll-remote-theme
