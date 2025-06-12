@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "My CV"
+permalink: /cv/
 ---
 
 Here is my professional experience.

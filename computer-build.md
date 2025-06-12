@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Building My Custom PC"
+permalink: /computer-build/
 ---
 
 This is where I will write about building my computer. I can add details, pictures, and more.
