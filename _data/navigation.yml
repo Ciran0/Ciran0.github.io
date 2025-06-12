@@ -1,0 +1,9 @@
+# _data/navigation.yml
+
+main:
+  - title: "Portfolio"
+    url: /
+  - title: "PC Build"
+    url: /computer-build/
+  - title: "CV"
+    url: /cv/
