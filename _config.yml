@@ -42,3 +42,4 @@ author:
 # You can safely ignore these for now
 plugins:
   - jekyll-remote-theme
+  - jekyll-include-cache
