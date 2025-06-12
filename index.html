@@ -55,25 +55,31 @@
                                    hx-target="#content">Working in Construction</a>
                             </li>
                             <li>
-                                <a href="#summary"
-                                   hx-get="/partials/activities/summary.html"
-                                   hx-target="#content">Summary</a>
+                                <a href="#hackaton"
+                                   hx-get="/partials/activities/hackaton.html"
+                                   hx-target="#content">Hackaton</a>
                             </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main id="content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </main>
-        <footer class="site-footer">
-            <p>&copy; 2024 Ciran0. All rights reserved.</p>
-        </footer>
-        <script>
+                            <li>
+                                <li>
+                                    <a href="#summary"
+                                       hx-get="/partials/activities/summary.html"
+                                       hx-target="#content">Summary</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main id="content">
+                <h1>Welcome to My Portfolio</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </main>
+            <footer class="site-footer">
+                <p>&copy; 2024 Ciran0. All rights reserved.</p>
+            </footer>
+            <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             // Check for a hash in the URL on page load
             const hash = window.location.hash || '#home';
@@ -87,6 +93,6 @@
                 link.click();
             }
         });
-        </script>
-    </body>
-</html>
+            </script>
+        </body>
+    </html>
