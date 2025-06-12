@@ -14,7 +14,7 @@ title: Ciran0's IT Portfolio
 description: >- # this means to ignore newlines until "baseurl:"
   A showcase of my journey into IT, from construction to code.
 url: "https://Ciran0.github.io" # the base hostname & protocol for your site
-# baseurl: "" # often left blank for user pages
+baseurl: "" # often left blank for user pages
 repository: "Ciran0/Ciran0.github.io"
 
 # -- Theme Settings --
