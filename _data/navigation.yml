@@ -1,24 +1,24 @@
 # _data/navigation.yml
-# Each '-' is an item in the navigation.
-# 'children' must be indented to be part of the item above it.
-
+# main navigation
 main:
+  - title: "Home"
+    url: /
   - title: "CV"
     url: /cv/
-  - title: "Professional Project"
-    url: /professional-project/
+  - title: "Professional Projects"
+    url: /projects/
   - title: "Activities"
     url: /activities/
     children:
       - title: "PC Build"
-        url: /computer-build/
+        url: /activities/pc-build/
       - title: "Learning Arch Linux"
-        url: /learning-arch/
-      - title: "Learning Lua"
-        url: /learning-lua/
+        url: /activities/learning-arch-linux/
       - title: "Learning Neovim"
-        url: /learning-neovim/
-      - title: "Work in Construction"
-        url: /working-in-construction/
-      - title: "Summary"
-        url: /activities-summary/
+        url: /activities/learning-neovim/
+      - title: "Learning Lua"
+        url: /activities/learning-lua/
+      - title: "Working in Construction"
+        url: /activities/working-in-construction/
+      - title: "Summary of Activities"
+        url: /activities/
