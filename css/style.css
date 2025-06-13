@@ -130,3 +130,34 @@ a:hover {
 	background-color: white;
 	border-top: 1px solid #e0e0e0;
 }
+
+/* css/style.css */
+
+/* --- Updated Footer Styles --- */
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.social-links {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+	/* space between icons */
+	padding: 0;
+	margin: 0;
+}
+
+.social-links a {
+	color: var(--secondary-color);
+	font-size: 1.6em;
+	/* icon size */
+	transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+	color: var(--primary-color);
+	/* color on hover */
+}
