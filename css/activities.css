@@ -79,3 +79,40 @@
 	font-weight: bold;
 	background-color: #f0f0f0;
 }
+
+.activity-image {
+	width: 100%;
+	/* make the image responsive */
+	max-width: 600px;
+	/* prevent it from becoming too large on wide screens */
+	height: auto;
+	/* maintain aspect ratio */
+	display: block;
+	/* remove extra space below image */
+	margin: 2rem auto;
+	/* center the image and add vertical spacing */
+	border-radius: 8px;
+	/* give it rounded corners like your containers */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	/* add a subtle shadow */
+}
+
+.code-snippet {
+	background-color: #f4f4f9;
+	/* A light, clean background */
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 1.5rem;
+	margin: 1.5rem 0;
+	overflow-x: auto;
+	/* Enables horizontal scrolling for long lines */
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 0.95em;
+	line-height: 1.6;
+}
+
+.code-snippet code {
+	white-space: pre;
+	/* Preserves whitespace and line breaks */
+	color: #333;
+}

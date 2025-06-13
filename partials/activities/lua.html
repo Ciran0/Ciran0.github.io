@@ -1,3 +1,4 @@
+<!-- partials/activities/lua.html -->
 <div class="activity-container">
     <div class="activity-header">
         <h1>Learning Lua</h1>
@@ -13,6 +14,35 @@
             <li>Developing small standalone scripts to automate personal tasks.</li>
             <li>Understanding its data structures, especially the versatile 'table' type.</li>
         </ul>
+        <hr style="border: 0;
+                   height: 1px;
+                   background-color: #f0f0f0;
+                   margin: 2.5rem 0">
+        <h2>Code Examples</h2>
+        <p>Here are a couple of snippets that illustrate Lua's clean syntax and functionality.</p>
+        <!-- Code Snippet 1: A simple function -->
+        <pre class="code-snippet"><code>-- A simple function to greet a user
+function greet(name)
+  return "Hello, " .. name .. "!"
+end
+
+print(greet("Developer")) -- Output: Hello, Developer!</code></pre>
+        <!-- Code Snippet 2: A configuration table -->
+        <pre class="code-snippet"><code>-- Example of a Lua table used for configuration
+local config = {
+  user = "Ciran",
+  theme = "dark",
+  plugins_enabled = true,
+  settings = {
+    font_size = 14,
+    line_numbers = true
+  }
+}
+
+-- Accessing nested values
+if config.settings.line_numbers then
+  print("Line numbers are enabled for user: " .. config.user)
+end</code></pre>
         <p>
             Learning Lua has provided me with a practical scripting language that complements my existing skills in Python and Shell scripting, opening up new avenues for development and automation.
         </p>
